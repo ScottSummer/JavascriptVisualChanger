@@ -1,0 +1,50 @@
+:root {
+  --base: #e11b22;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+body {
+  text-align: center;
+  color: white;
+  font-family: "helvetica neue", sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+  animation: renkdegistir 5s infinite;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+
+.hl {
+  color: var(--base);
+}
+
+.controls {
+  margin-bottom: 50px;
+}
+
+input {
+  width: 100px;
+}
+
+@keyframes renkdegistir {
+  0% {
+    background-color: #ff4d00;
+  }
+  25% {
+    background-color: #a5004c;
+  }
+  50% {
+    background-color: #008b8b;
+  }
+  75% {
+    background-color: #008060;
+  }
+  100% {
+    background-color: #6b006b;
+  }
+}
